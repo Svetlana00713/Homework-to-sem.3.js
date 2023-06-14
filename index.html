@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let test = prompt("Как Вас зовут?", "Имя");
+        let userName = test;
+
+            function showMessage() {
+            let message = 'Привет, ' + userName + '!';
+            alert(message);
+        }
+
+        showMessage();
+        let test1 = prompt("Сколько Вам лет?", "Возраст");
+        let age = test1;
+
+        switch (age) {
+            case '18':
+            alert('Вы совершеннолетний, Вам все можно!');
+            break; 
+            case '10':
+            alert('Вам надо учить уроки!');
+            break;
+            case '30':
+            alert('Ложитесь спать, завтра на работу!');
+            break;
+            default:
+            alert('Мы не знаем, что Вам делать...');       
+        }
+
+    </script>
+    
+</body>
+</html>
